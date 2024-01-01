@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100svh;
+}
+
+#main{
+    --noise-width: 300px;
+    width: var(--noise-width);
+    aspect-ratio: 1;
+    margin: auto;
+    outline: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.noise-box{
+    aspect-ratio: 1;
+    background-color: black;
+    opacity: 0.9;
+    align-self: flex-start;
+}
+
+
+button{
+    background-color: rgb(80, 155, 130);
+    padding: 10px;
+    cursor: pointer;
+    font-size: large;
+    color: white;
+}
+
+
+input[type=number]{
+    padding: 9px;
+    font-size: 20px;
+    background-color: white;
+    width: 300px;
+    margin-block: 20px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White noise</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <button onclick="noiseGeneratorFactory()">Generate New Noise</button>
+    <div>
+        <label for="color-picker"> Choose color:  </label>
+        <input type="number" min="0.0001" id="color-picker" value="0.009" class="noise-size-input" max="0.99999" placeholder="0 - 0.999999999">
+        <br>
+        <small style="text-align: center;"> Less the number more CPU used. 😎 </small>
+    </div>
+    <br>
+
+
+    <input type="color" class="color-picker">
+
+    <div id="main">
+    </div>
+    <span class="div-count" > </span>
+
+<script src="./script.js"></script>
+</body>
+</html>
